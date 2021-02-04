@@ -9,7 +9,7 @@ class MainPage(View):
 
     def get(self, request):
         context = {'name': 'Jeka', 'surname': 'Kovalev'}
-        return render(request, 'home.html')
+        return render(request, 'home.html', context=context)
 
 
 class AboutPage(View):
