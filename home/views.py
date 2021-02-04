@@ -16,3 +16,9 @@ class AboutPage(View):
 
     def get(self, request):
         return HttpResponse('About page')
+
+
+class ContactsPage(View):
+
+    def get(self, request):
+        return HttpResponse('Contacts')
