@@ -8,6 +8,7 @@ from django.views import View
 class MainPage(View):
 
     def get(self, request):
+        context = {'name': 'Jeka', 'surname': 'Kovalev'}
         return render(request, 'home.html')
 
 
