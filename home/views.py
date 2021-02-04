@@ -9,3 +9,9 @@ class MainPage(View):
 
     def get(self, request):
         return render(request, 'home.html')
+
+
+class AboutPage(View):
+
+    def get(self, request):
+        return HttpResponse('About page')
